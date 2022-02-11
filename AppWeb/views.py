@@ -82,7 +82,7 @@ def vehiculo(request):
                 r_disponible =True
             else: 
                 r_disponible =False
-                
+
             vehiculo = Auto(marca=r_marca, modelo=r_modelo, añofabricacion=r_añofabricacion, disponible=r_disponible)
             vehiculo.save()
     
