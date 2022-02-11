@@ -1,5 +1,20 @@
 {% extends "AppWeb/padre.html" %}
 
 {% block ContenidoQueCambia %}
+<h4 class="text-uppercase mb-4">Formulario</h4>
 Para registrarse como vendedor por favor completar los siguientes datos:
+<p>
+
+    
+</p>
+
+    <form action="" method="POST" >{% csrf_token%}
+
+         <table>
+            {{ miFormulario.as_table }}
+        </table>
+
+        <input type="submit" value="Enviar" /> 
+
+    </form>
 {% endblock ContenidoQueCambia %}

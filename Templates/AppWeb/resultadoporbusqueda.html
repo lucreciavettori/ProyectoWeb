@@ -1,0 +1,28 @@
+{% extends "AppWeb/padre.html" %}
+
+{% block ContenidoQueCambia %}
+<h4 class="text-uppercase mb-4">RESULTADO DE BUSQUEDA</h4>
+A continuación se indican los vehiculos:
+<p>
+
+    
+</p>
+
+<p>MARCA: {{marca}}</p>
+
+{% if vehiculo %}
+
+<ul>
+    {%for vehiculo in vehiculo%}
+        <li> {{vehiculo.modelo}} </li>
+        <li> {{vehiculo.añofabricacion}} </li>
+    {% endfor %}
+</ul>
+
+    {% else %}
+    <p style="color: red;"> No hay vehiculos registrados con esa descripción </p>
+
+{% endif %}
+
+
+{% endblock ContenidoQueCambia %}

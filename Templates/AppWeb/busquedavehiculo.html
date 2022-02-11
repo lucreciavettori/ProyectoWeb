@@ -1,0 +1,18 @@
+{% extends "AppWeb/padre.html" %}
+
+{% block ContenidoQueCambia %}
+<h4 class="text-uppercase mb-4">BUSQUEDA DE VEHICULO EN VENTA</h4>
+Ingrese la marca del vehiculo: 
+<p>
+
+    
+</p>
+
+<form action="/AppWeb/buscar/" method="GET">
+
+    <input type="text" name="marca" id="marca">
+    <input type="submit" value="Buscar"> 
+
+</form>
+
+{% endblock ContenidoQueCambia %}

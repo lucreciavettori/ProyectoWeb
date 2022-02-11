@@ -1,9 +1,11 @@
 from django.urls import path
-from AppWeb.views import auto, clientes, inicio, vendedor
+from AppWeb.views import buscar, busquedavehiculo, vehiculo, cliente, inicio, vendedor
 
 urlpatterns = [
-    path('clientes/', clientes),
+    path('cliente/', cliente),
     path('vendedor/', vendedor),
-    path('vehiculo/', auto),
+    path('vehiculo/', vehiculo),
     path('inicio/', inicio),
+    path('buscar/', buscar),
+    path('busquedavehiculo/', busquedavehiculo),
 ]
