@@ -18,4 +18,4 @@ class VehiculoFormulario (forms.Form):
     marca = forms.CharField(max_length=20)
     modelo = forms.CharField(max_length=20)
     añofabricacion = forms.IntegerField()
-    disponible = forms.BooleanField()
+    disponible = forms.BooleanField(initial=True)
